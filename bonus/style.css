@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+/* Inizio media queries */
+
+@media only screen and (max-width: 419px){
+
+  body{
+    min-width: 300px;
+  }
+
+  #lezioni .row{
+    background-color: #f1f1ce;
+  }
+
+  #lezioni .row .left, #lezioni .row .right{
+    float:  none;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .row{
+    width: 100%;
+    margin-top: 0px;
+    padding: 5px;
+  }
+
+  img{
+    height: auto;
+    width: 50%;
+
+  }
+ 
+  #steps .row>.left, #steps .row>.central, #steps .row>.right{
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #why{
+    background-color: #f1f1ce;
+  }
+
+  #why .row>.first, #why .row>.second, #why .row>.third{
+    margin-top: 0px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 769px){
+
+  #lezioni .row{
+    background-color: #aef8f7;
+  }
+
+  #lezioni .row .left, #lezioni .row .right{
+    float:  none;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .row{
+    width: 100%;
+    margin-top: 0px;
+    padding: 5px;
+  }
+
+  img{
+    height: auto;
+    width: 50%;
+
+  }
+ 
+  #steps .row>.left, #steps .row>.central, #steps .row>.right{
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #why{
+    background-color: #aef8f7;
+  }
+
+  #why .row>.first, #why .row>.second, #why .row>.third{
+    margin-top: 0px;
+    padding: 5px;
+  }
+}
+
+/* Fine media queries */
