@@ -81,6 +81,7 @@ img {
 /* Inizio media queries */
 
 @media (max-width: 419px){
+
   #lezioni .row{
     background-color: #f1f1ce;
   }
@@ -88,13 +89,13 @@ img {
   #lezioni .row .left, #lezioni .row .right{
     float:  none;
     width: 100%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    padding: 10px;
   }
 
   .row{
     width: 100%;
     margin-top: 0px;
+    padding: 10px;
   }
 
   img{
@@ -112,6 +113,11 @@ img {
 
   #why{
     background-color: #f1f1ce;
+  }
+
+  #why .row>.first, #why .row>.second, #why .row>.third{
+    margin-top: 0px;
+    padding: 10px;
   }
 }
 
