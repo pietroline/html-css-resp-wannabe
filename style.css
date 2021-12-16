@@ -107,6 +107,9 @@ img {
     width: 100%;
   }
 
+  #why{
+    background-color: #f1f1ce;
+  }
 }
 
 /* Fine media queries */
