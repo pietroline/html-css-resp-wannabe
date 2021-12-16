@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -78,9 +78,15 @@ img {
   clear: both;
 }
 
+
+
 /* Inizio media queries */
 
-@media (max-width: 419px){
+@media only screen and (max-width: 419px){
+
+  body{
+    min-width: 300px;
+  }
 
   #lezioni .row{
     background-color: #f1f1ce;
